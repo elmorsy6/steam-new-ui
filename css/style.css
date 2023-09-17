@@ -1,0 +1,321 @@
+/*
+font-size: (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  background-color: #212529;
+}
+body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+aside {
+  border-right: 1px solid rgba(255, 255, 255, 0.311);
+  background-color: #212529;
+  grid-row: 1/-1;
+  padding: 20px;
+}
+
+aside img {
+  width: 160px;
+  color: #fff;
+  filter: invert(100%);
+  margin-bottom: 62px;
+  -webkit-filter: invert(100%);
+}
+menu {
+  background-color: #212529;
+  padding: 20px;
+  box-shadow: 0 5px 15px #343a403b;
+}
+.menu-list {
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cart {
+  color: #4263eb;
+}
+.list-hidden {
+  margin-left: 34px;
+}
+.hidden-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #adb5bd;
+}
+.hidden-items .active {
+  color: #fff;
+}
+.hidden-items li {
+  color: #adb5bd;
+}
+.list-icon {
+  align-items: center;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.arrow {
+  width: 16px;
+  height: 16px;
+}
+li {
+  font-weight: 500;
+  list-style: none;
+  color: #adb5bd;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+.cart {
+  justify-content: space-between;
+  position: relative;
+}
+.cart::after {
+  border: #4263eb;
+  color: #4263eb;
+  height: 100%;
+  width: 2.5px;
+  position: absolute;
+  left: -10px;
+}
+li span {
+}
+.list-icon {
+  width: 24px;
+}
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-search {
+  display: flex;
+  position: relative;
+}
+input {
+  background-color: none;
+  width: 400px;
+  height: 36px;
+  border-radius: 12px;
+  padding-left: 32px;
+
+  background-color: #555;
+  border: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: 0 10px 20px #55555537;
+}
+::placeholder {
+  color: #ffffffb0;
+}
+.input-icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -50%);
+  -webkit-transform: translate(25%, -50%);
+  -moz-transform: translate(25%, -50%);
+  -ms-transform: translate(25%, -50%);
+  -o-transform: translate(25%, -50%);
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.email-icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  background-color: #4263eb;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.person p {
+  color: #fff;
+}
+.aroow-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+}
+
+.content {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-game {
+  gap: 32px;
+  grid-column: 1/-1;
+  background-color: #343a40;
+  height: 350px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  display: flex;
+  padding: 20px;
+}
+.img {
+  transition: 0.2s;
+  width: 50%;
+  height: 100%;
+  background-color: #555;
+  background-image: url(../imgs/ghost-of-tsushima-review-a-likeable-if-clunky-hollywood-blockbuster-1594727460287.png);
+  background-position: top;
+  background-size: cover;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.game-info {
+  padding-top: 25px;
+}
+.main-game h3 {
+  color: #fff;
+  font-size: 44px;
+}
+.main-game p {
+  color: #868e96;
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.tag-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+}
+.roles {
+  margin-top: 16px;
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+.btn {
+  margin-bottom: 12px;
+}
+.role-btn {
+  display: flex;
+  gap: 12px;
+  color: #fff;
+  font-size: 14px;
+  align-items: center;
+  background-color: #495057;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+.row-btns {
+  display: flex;
+  gap: 8px;
+}
+.main-game {
+  margin-bottom: 32px;
+}
+.buy-now {
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 32px;
+  width: 100%;
+  background-color: #4263eb;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.buy-now span {
+  font-size: 12px;
+}
+.buy-now:hover {
+  box-shadow: 0 5px 20px rgba(66, 100, 235, 0.468);
+}
+.see-more {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/-1;
+}
+.popular-header h3 {
+  color: #fff;
+  font-size: 24px;
+}
+.popular-header a:link,
+.popular-header a:visited {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.arrow-icon {
+  color: #fff;
+  width: 14px;
+  height: 14px;
+}
